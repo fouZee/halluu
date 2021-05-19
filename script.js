@@ -6,14 +6,14 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Powjii";
+  sender = "Ojiii";
 }
 
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Halo Sayangnyaa akuu", "Aku punya pertanyaan niiii", "question").then(function () {
+  Swal.fire("Halo Cantikk", "Aku punya pertanyaan niiii", "question").then(function () {
     Swal.fire("Jawab jujur yaa sayangg").then(function () {
-      Swal.fire("Awasss yaaa kalooo boong", "", "error").then(function () {
+      Swal.fire("Awasss yaaa kalooo boong!!!", "", "error").then(function () {
 
         const {
           value: name
@@ -24,7 +24,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           showCancelButton: true,
           inputValidator: (value) => {
             if (!value) {
-              return 'isi duluu dongg ayy :('
+              return 'isi duluu dongg Cantikkk :('
             } else {
               nama = value;
             }
@@ -53,7 +53,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   inputValue: 50
                 }).then((e) => {
                   val = e.value
-                  Swal.fire(`Makasih banget ya byy udah sayang sama ${sender} ${val}%`).then(function () {
+                  Swal.fire(`Makasih banget yaaaa udah sayang sama ${sender} ${val}%`).then(function () {
                     Swal.fire({
                       title: `Sekarang ${nama} kangen ga sama ${sender}?`,
                       showDenyButton: true,
@@ -69,7 +69,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('yahhh , emang ga kangen apaa sama pacar sendiri:(', '', 'error').then(function () {
+                        Swal.fire('yahhh , emang ga kangen apaa sama cowo sendiri:(', '', 'error').then(function () {
                           Swal.fire('Yaudaaa dehhh :((')
                         })
                       }
